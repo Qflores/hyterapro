@@ -28,7 +28,7 @@
 
     <!-- FAVICON -->
     <link href="{{ asset('backend/assets/img/favicon.png') }}" rel="shortcut icon" />
-
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <!--
     HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
   -->
@@ -40,6 +40,9 @@
     <script src="{{ asset('backend/assets/plugins/nprogress/nprogress.js')}}"></script>
 
     @livewireStyles
+
+    <!-- Scripts-->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
 
     @stack('styles')
 
@@ -64,6 +67,7 @@
           ——— LEFT SIDEBAR WITH FOOTER
           =====================================
         -->
+
         <aside class="left-sidebar bg-sidebar">
             <div id="sidebar" class="sidebar sidebar-with-footer">
                 <!-- Aplication Brand -->

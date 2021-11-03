@@ -9,6 +9,18 @@ class Proyecto extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'description',
+        'status',
+        'fecha_inicio',
+        'fecha_fin',
+        'cliente_id',
+        'supplier_id',
+        'jefe_id',
+        'coordinador_id'
+    ];
+
     public function proveedor()
     {
         return $this->belongsTo(Supplier::class, 'supplier_id');
